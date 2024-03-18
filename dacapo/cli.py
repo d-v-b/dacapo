@@ -1,6 +1,7 @@
 from pathlib import Path
 from typing import Optional
 
+from dacapo.demo_data import download_demo_data_cli
 import numpy as np
 
 import dacapo
@@ -458,3 +459,5 @@ def get_rois(total_roi, read_roi_size, write_roi_size, input_array):
     context = context * input_array.voxel_size
 
     return _total_roi, read_roi, write_roi, context
+
+cli.add_command(download_demo_data_cli)
