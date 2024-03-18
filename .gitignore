@@ -24,3 +24,5 @@ tmp/
 
 *.zarr/
 *.n5/
+# virtual environments
+.venv
